@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Enrollment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="date"] {
+      width: 100%;
+      padding: 7px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin: 15px 5px 0 0;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Enrollment Form</h2>
+  <form id="enrollmentForm">
+    <label for="rollNo">Roll No (Primary Key):</label>
+    <input type="text" id="rollNo" name="rollNo" autofocus />
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" disabled />
+
+    <label for="className">Class:</label>
+    <input type="text" id="className" name="className" disabled />
+
+    <label for="birthDate">Birth Date:</label>
+    <input type="date" id="birthDate" name="birthDate" disabled />
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" disabled />
+
+    <label for="enrollDate">Enrollment Date:</label>
+    <input type="date" id="enrollDate" name="enrollDate" disabled />
+
+    <div>
+      <button type="button" id="saveBtn" disabled>Save</button>
+      <button type="button" id="updateBtn" disabled>Update</button>
+      <button type="button" id="resetBtn" disabled>Reset</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
